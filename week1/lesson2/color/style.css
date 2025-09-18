@@ -22,7 +22,7 @@ header p {
 }
 
 /* Exercise Box Styles */
-.exercise-box-1 {
+.exercise-box.box-1 {
     width: 80%;
     padding: 20px;
     margin: 20px auto;
@@ -39,7 +39,7 @@ header p {
 
 
 /* Exercise Box Styles */
-.exercise-box-2 {
+.exercise-box.box-2 {
     width: 80%;
     padding: 20px;
     margin: 20px auto;
