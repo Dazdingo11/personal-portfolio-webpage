@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ainar Grinberg — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Ainar Grinberg — web developer building websites, automations, and SaaS ideas. Projects: IwiseAI, RankedWithAI, SmartPriceTracker, King’s Barbers." />
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Ainar Grinberg</a>
+      <nav class="nav" aria-label="main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap about-grid">
+        <article class="about-copy">
+          <h1>Hi, I’m Ainar Grinberg</h1>
+          <p><strong>Web developer & aspiring entrepreneur</strong> who loves building websites, automating workflows, and trying new SaaS ideas. I enjoy turning problems into simple, working products and I’m always learning new tools.</p>
+
+          <h3>Core Skills</h3>
+          <ul class="list">
+            <li>HTML5 &amp; Semantic HTML</li>
+            <li>CSS3 (Flexbox, Grid, Responsive Design)</li>
+            <li>JavaScript (modern ES6+ features)</li>
+            <li>Next.js (React framework)</li>
+            <li>APIs &amp; JSON (REST integration)</li>
+            <li>Supabase &amp; SQL (auth, storage, data)</li>
+            <li>Python (automation &amp; backend scripts)</li>
+            <li>Authentication (Google OAuth)</li>
+            <li>AI Integration (OpenAI GPT APIs)</li>
+            <li>Git &amp; GitHub (version control, Pages)</li>
+          </ul>
+
+          <h3>Focus Areas</h3>
+          <ul class="list">
+            <li>Automating repetitive tasks</li>
+            <li>Designing &amp; deploying SaaS ideas</li>
+            <li>Building clean, functional websites</li>
+            <li>Learning &amp; experimenting with new tech</li>
+          </ul>
+        </article>
+
+        <figure class="about-photo">
+          <img src="images/ainar.jpg" alt="Photo of Ainar Grinberg" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+
+        <div class="cards">
+          <!-- IwiseAI -->
+          <article class="card">
+            <div class="card-body">
+              <h3>IwiseAI</h3>
+              <p>
+                An AI automation platform built to <strong>replace office roles safely and reliably</strong>.
+                Core loop mirrors real knowledge work: <strong>Input → Identify → Plan → Act → Record</strong>.
+              </p>
+              <ul class="meta">
+                <li><strong>Agents:</strong> Safety, Classifier, Policy, Planner, Critic, Executor, Watchdog, Memory, Evaluator, Supervisor.</li>
+                <li><strong>Compliance:</strong> GDPR, PII redaction, policy packs, tenant scoping &amp; audit logs.</li>
+                <li><strong>HRM brain:</strong> knowledge + permissions + tools; plans tasks and executes within allowed scopes.</li>
+                <li><strong>Modes:</strong> Safe (analysis-only), Learn (human-in-loop), Production (autonomous).</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- RankedWithAI -->
+          <article class="card">
+            <div class="card-body">
+              <h3>RankedWithAI</h3>
+              <p>
+                An <strong>IMDB-style ranking platform for AI tools</strong> built with Next.js. Browse fast carousels and card grids, discover by category or tag, and surface community signals.
+              </p>
+              <ul class="meta">
+                <li>Responsive cards &amp; carousels for quick skimming.</li>
+                <li>Categories, tags, search; sort by rating/new/trending.</li>
+                <li>Static generation with revalidation for speed.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- SmartPriceTracker -->
+          <article class="card">
+            <div class="card-body">
+              <h3>SmartPriceTracker</h3>
+              <p>
+                A lightweight <strong>price-tracking toolkit in Python</strong> that exports clean CSV/XLSX. Designed to run locally with fallbacks so demos work even when sites add anti-bot barriers.
+              </p>
+              <ul class="meta">
+                <li><strong>Modes:</strong> Demo (local HTML), HTTP (Requests + BeautifulSoup), Selenium (dynamic sites).</li>
+                <li><strong>Reliability:</strong> timeouts, retries, fallbacks to local parsing; VPN support to improve stability.</li>
+                <li>Normalized exports: name, price, source, url.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- King’s Barbers -->
+          <article class="card">
+            <div class="card-body">
+              <h3>King’s Barbers</h3>
+              <p>
+                A minimal, responsive landing page for a local barbershop. HTML/CSS with small JS for UI.
+                Prototype <strong>Python FastAPI</strong> backend (auth + bookings); GitHub Pages demo uses a static mock.
+              </p>
+              <ul class="meta">
+                <li>Sections: hero, services, gallery, pricing, contact.</li>
+                <li>Deployment: GitHub Pages (<code>/docs</code> on main).</li>
+              </ul>
+              <div class="buttons">
+                <a class="btn" href="https://dazdingo11.github.io/KingsBarbers/" target="_blank" rel="noopener">Live Demo</a>
+                <a class="btn btn-ghost" href="https://github.com/Dazdingo11/KingsBarbers" target="_blank" rel="noopener">Source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact</h2>
+
+        <ul class="icon-row">
+          <!-- Email -->
+          <li>
+            <a href="mailto:grinbergainar@gmail.com"
+              title="grinbergainar@gmail.com"
+              aria-label="Email: grinbergainar@gmail.com">
+              <img src="images/email.svg" alt="" />
+            </a>
+          </li>
+
+          <!-- Phone -->
+          <li>
+            <a href="tel:+447440123456"
+              title="+44 7440 123456"
+              aria-label="Call: +44 7440 123456">
+              <img src="images/call.svg" alt="" />
+            </a>
+          </li>
+
+          <!-- LinkedIn -->
+          <li>
+            <a href="https://www.linkedin.com/in/ainar-grinberg-644891205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank" rel="noopener"
+              title="LinkedIn: Ainar Grinberg"
+              aria-label="LinkedIn profile">
+              <img src="images/linkedin.svg" alt="" />
+            </a>
+          </li>
+
+          <!-- GitHub -->
+          <li>
+            <a href="https://github.com/Dazdingo11"
+              target="_blank" rel="noopener"
+              title="GitHub: Dazdingo11"
+              aria-label="GitHub profile">
+              <img src="images/github.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+
+
+        <!-- FORM -->
+        <form class="contact-form" action="#contact" method="get" aria-label="Contact form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Warning button -->
+        <p style="margin-top:16px;">
+          <a class="btn-warning" href="warning.html">⚠️ Warning: do not click this button</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <small>© 2025 Ainar Grinberg</small>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Grade — Ainar Grinberg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Ainar Grinberg</a>
+      <nav class="nav" aria-label="main">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="grade-wrap">
+    <h1>Teacher Grading Portal</h1>
+    <p class="muted">Please record an honest grade for this HTML + CSS portfolio.</p>
+
+    <!-- Grade form -->
+    <form class="grade-box" action="warning.html" method="get">
+      <div class="grade-row" style="margin-bottom:12px;">
+        <label for="teacher">Your name</label>
+        <input id="teacher" name="teacher" type="text" placeholder="Name" required />
+
+        <label for="grade">Grade</label>
+        <select id="grade" name="grade" required>
+          <option value="">Select…</option>
+          <option>A+</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+          <option>Pass</option>
+        </select>
+
+        <label for="score">Score (%)</label>
+        <input id="score" name="score" type="number" min="0" max="100" step="1" placeholder="100" />
+
+        <label for="rubric">Rubric</label>
+        <select id="rubric" name="rubric">
+          <option>Meets all criteria</option>
+          <option>Minor issues</option>
+          <option>Needs improvements</option>
+        </select>
+
+        <!-- Mood slider -->
+        <div class="mood">
+          <label for="mood">Rate your mood</label>
+          <div class="scale">
+            <span class="minmax">0</span>
+            <input id="mood" name="mood" type="range" min="0" max="100" value="80" />
+            <span class="minmax">100</span>
+          </div>
+        </div>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Feedback, notes, suggested improvements…"></textarea>
+      </div>
+
+      <div class="actions" style="display:flex;gap:8px;margin-top:12px;">
+        <button type="submit" class="btn">Submit</button>
+        <a class="btn" href="warning.html">Back to portfolio</a>
+      </div>
+      <p class="muted" style="margin-top:8px;">Submitting will save and return to the confirmation screen.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <small>© 2025 Ainar Grinberg</small>
+    </div>
+  </footer>
+</body>
+</html>

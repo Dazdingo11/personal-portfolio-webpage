@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Warning — Ainar Grinberg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    
+    .gesture-gate { position: fixed; inset: 0; z-index: 2; background: transparent; cursor: pointer; }
+  </style>
+</head>
+<body class="warning-page">
+  <div class="video-wrap">
+    <video id="bgVideo" class="video" src="images/Batman.mp4" autoplay loop playsinline controls preload="auto">
+      Sorry, your browser doesn’t support embedded videos.
+    </video>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Ainar Grinberg</a>
+      <nav class="nav" aria-label="main">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="overlay">
+    <div class="overlay-inner overlay-left">
+      <div class="overlay-buttons">
+        <a class="btn-warning" href="grading.html">Teachers only →</a>
+        <a class="btn-ghost" href="index.html">Back to portfolio</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <small>© 2025 Ainar Grinberg</small>
+    </div>
+  </footer>
+
+  <div id="gate" class="gesture-gate" aria-hidden="true"></div>
+  <script>
+    (function () {
+      const gate = document.getElementById('gate');
+      const video = document.getElementById('bgVideo');
+      function handler() {
+        try { video.muted = false; } catch(e){}
+        try { video.volume = 1.0; } catch(e){}
+        const play = video.play(); if (play && play.catch) play.catch(()=>{});
+        const fs = video.requestFullscreen || video.webkitRequestFullscreen || video.msRequestFullscreen || video.mozRequestFullScreen;
+        if (fs) { try { fs.call(video); } catch(e){} }
+        gate.removeEventListener('click', handler);
+        window.removeEventListener('keydown', handler);
+        gate.parentNode && gate.parentNode.removeChild(gate);
+      }
+      gate.addEventListener('click', handler, { once: true });
+      window.addEventListener('keydown', handler, { once: true });
+      try { video.play().catch(()=>{}); } catch(e){}
+    })();
+  </script>
+</body>
+</html>
